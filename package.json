@@ -1,0 +1,46 @@
+{
+  "_from": "git+https://github.com/Vladimir7280/symbol-openapi-typescript-fetch-client.git",
+  "_id": "symbol-openapi-typescript-fetch-client@1.0.2-SNAPSHOT.202204251257",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/symbol-openapi-typescript-fetch-client",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "symbol-openapi-typescript-fetch-client@git+https://github.com/Vladimir7280/symbol-openapi-typescript-fetch-client.git",
+    "name": "symbol-openapi-typescript-fetch-client",
+    "escapedName": "symbol-openapi-typescript-fetch-client",
+    "rawSpec": "git+https://github.com/Vladimir7280/symbol-openapi-typescript-fetch-client.git",
+    "saveSpec": "git+https://github.com/Vladimir7280/symbol-openapi-typescript-fetch-client.git",
+    "fetchSpec": "https://github.com/Vladimir7280/symbol-openapi-typescript-fetch-client.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "git+https://github.com/Vladimir7280/symbol-openapi-typescript-fetch-client.git#c0daba42ebcaa1e2edde2af2510d6389ff196b0b",
+  "_spec": "symbol-openapi-typescript-fetch-client@git+https://github.com/Vladimir7280/symbol-openapi-typescript-fetch-client.git",
+  "_where": "/root/test-install/twix-sdk",
+  "bugs": {
+    "url": "https://github.com/nemtech/symbol-openapi-generator"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "OpenAPI client for symbol-openapi-typescript-fetch-client",
+  "devDependencies": {
+    "typescript": "^3.6"
+  },
+  "homepage": "https://github.com/nemtech/symbol-openapi-generator",
+  "main": "./dist/index.js",
+  "name": "symbol-openapi-typescript-fetch-client",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nemtech/symbol-openapi-generator.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "typings": "./dist/index.d.ts",
+  "version": "1.0.2-SNAPSHOT.202204251257"
+}
