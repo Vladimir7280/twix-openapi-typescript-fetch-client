@@ -61,7 +61,7 @@ class RestrictionMosaicRoutesApi extends runtime.BaseAPI {
                 headers: headerParameters,
                 query: queryParameters,
             });
-            return new runtime.JSONApiResponse(response, (jsonValue) => (0, models_1.MosaicRestrictionDTOFromJSON)(jsonValue));
+            return new runtime.JSONApiResponse(response, (jsonValue) => models_1.MosaicRestrictionDTOFromJSON(jsonValue));
         });
     }
     /**
@@ -91,7 +91,7 @@ class RestrictionMosaicRoutesApi extends runtime.BaseAPI {
                 headers: headerParameters,
                 query: queryParameters,
             });
-            return new runtime.JSONApiResponse(response, (jsonValue) => (0, models_1.MerkleStateInfoDTOFromJSON)(jsonValue));
+            return new runtime.JSONApiResponse(response, (jsonValue) => models_1.MerkleStateInfoDTOFromJSON(jsonValue));
         });
     }
     /**
@@ -139,7 +139,7 @@ class RestrictionMosaicRoutesApi extends runtime.BaseAPI {
                 headers: headerParameters,
                 query: queryParameters,
             });
-            return new runtime.JSONApiResponse(response, (jsonValue) => (0, models_1.MosaicRestrictionsPageFromJSON)(jsonValue));
+            return new runtime.JSONApiResponse(response, (jsonValue) => models_1.MosaicRestrictionsPageFromJSON(jsonValue));
         });
     }
     /**

@@ -28,22 +28,23 @@
  * Do not edit the class manually.
  */
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.NodeKeyLinkNetworkPropertiesDTOToJSON = exports.NodeKeyLinkNetworkPropertiesDTOFromJSONTyped = exports.NodeKeyLinkNetworkPropertiesDTOFromJSON = void 0;
-const runtime_1 = require("../runtime");
-function NodeKeyLinkNetworkPropertiesDTOFromJSON(json) {
-    return NodeKeyLinkNetworkPropertiesDTOFromJSONTyped(json, false);
+exports.PriceTransactionBodyDTOToJSON = exports.PriceTransactionBodyDTOFromJSONTyped = exports.PriceTransactionBodyDTOFromJSON = void 0;
+function PriceTransactionBodyDTOFromJSON(json) {
+    return PriceTransactionBodyDTOFromJSONTyped(json, false);
 }
-exports.NodeKeyLinkNetworkPropertiesDTOFromJSON = NodeKeyLinkNetworkPropertiesDTOFromJSON;
-function NodeKeyLinkNetworkPropertiesDTOFromJSONTyped(json, ignoreDiscriminator) {
+exports.PriceTransactionBodyDTOFromJSON = PriceTransactionBodyDTOFromJSON;
+function PriceTransactionBodyDTOFromJSONTyped(json, ignoreDiscriminator) {
     if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        'dummy': !runtime_1.exists(json, 'dummy') ? undefined : json['dummy'],
+        'blockHeight': json['blockHeight'],
+        'highPrice': json['highPrice'],
+        'lowPrice': json['lowPrice'],
     };
 }
-exports.NodeKeyLinkNetworkPropertiesDTOFromJSONTyped = NodeKeyLinkNetworkPropertiesDTOFromJSONTyped;
-function NodeKeyLinkNetworkPropertiesDTOToJSON(value) {
+exports.PriceTransactionBodyDTOFromJSONTyped = PriceTransactionBodyDTOFromJSONTyped;
+function PriceTransactionBodyDTOToJSON(value) {
     if (value === undefined) {
         return undefined;
     }
@@ -51,7 +52,9 @@ function NodeKeyLinkNetworkPropertiesDTOToJSON(value) {
         return null;
     }
     return {
-        'dummy': value.dummy,
+        'blockHeight': value.blockHeight,
+        'highPrice': value.highPrice,
+        'lowPrice': value.lowPrice,
     };
 }
-exports.NodeKeyLinkNetworkPropertiesDTOToJSON = NodeKeyLinkNetworkPropertiesDTOToJSON;
+exports.PriceTransactionBodyDTOToJSON = PriceTransactionBodyDTOToJSON;

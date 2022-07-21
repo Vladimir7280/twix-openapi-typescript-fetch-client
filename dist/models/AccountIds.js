@@ -39,8 +39,8 @@ function AccountIdsFromJSONTyped(json, ignoreDiscriminator) {
         return json;
     }
     return {
-        'publicKeys': !(0, runtime_1.exists)(json, 'publicKeys') ? undefined : json['publicKeys'],
-        'addresses': !(0, runtime_1.exists)(json, 'addresses') ? undefined : json['addresses'],
+        'publicKeys': !runtime_1.exists(json, 'publicKeys') ? undefined : json['publicKeys'],
+        'addresses': !runtime_1.exists(json, 'addresses') ? undefined : json['addresses'],
     };
 }
 exports.AccountIdsFromJSONTyped = AccountIdsFromJSONTyped;

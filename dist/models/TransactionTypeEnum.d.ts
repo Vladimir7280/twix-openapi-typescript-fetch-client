@@ -35,6 +35,7 @@
  * * 0x4151 (16721 decimal) - MosaicGlobalRestrictionTransaction.
  * * 0x4251 (16977 decimal) - MosaicAddressRestrictionTransaction.
  * * 0x4154 (16724 decimal) - TransferTransaction.
+ * * 0x4156 (16726 decimal) - PriceTransaction.
  * @export
  * @enum {string}
  */
@@ -62,7 +63,8 @@ export declare enum TransactionTypeEnum {
     NUMBER_17232 = 17232,
     NUMBER_16721 = 16721,
     NUMBER_16977 = 16977,
-    NUMBER_16724 = 16724
+    NUMBER_16724 = 16724,
+    NUMBER_16726 = 16726
 }
 export declare function TransactionTypeEnumFromJSON(json: any): TransactionTypeEnum;
 export declare function TransactionTypeEnumFromJSONTyped(json: any, ignoreDiscriminator: boolean): TransactionTypeEnum;

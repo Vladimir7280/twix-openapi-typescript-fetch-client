@@ -39,11 +39,11 @@ function AggregateNetworkPropertiesDTOFromJSONTyped(json, ignoreDiscriminator) {
         return json;
     }
     return {
-        'maxTransactionsPerAggregate': !(0, runtime_1.exists)(json, 'maxTransactionsPerAggregate') ? undefined : json['maxTransactionsPerAggregate'],
-        'maxCosignaturesPerAggregate': !(0, runtime_1.exists)(json, 'maxCosignaturesPerAggregate') ? undefined : json['maxCosignaturesPerAggregate'],
-        'enableStrictCosignatureCheck': !(0, runtime_1.exists)(json, 'enableStrictCosignatureCheck') ? undefined : json['enableStrictCosignatureCheck'],
-        'enableBondedAggregateSupport': !(0, runtime_1.exists)(json, 'enableBondedAggregateSupport') ? undefined : json['enableBondedAggregateSupport'],
-        'maxBondedTransactionLifetime': !(0, runtime_1.exists)(json, 'maxBondedTransactionLifetime') ? undefined : json['maxBondedTransactionLifetime'],
+        'maxTransactionsPerAggregate': !runtime_1.exists(json, 'maxTransactionsPerAggregate') ? undefined : json['maxTransactionsPerAggregate'],
+        'maxCosignaturesPerAggregate': !runtime_1.exists(json, 'maxCosignaturesPerAggregate') ? undefined : json['maxCosignaturesPerAggregate'],
+        'enableStrictCosignatureCheck': !runtime_1.exists(json, 'enableStrictCosignatureCheck') ? undefined : json['enableStrictCosignatureCheck'],
+        'enableBondedAggregateSupport': !runtime_1.exists(json, 'enableBondedAggregateSupport') ? undefined : json['enableBondedAggregateSupport'],
+        'maxBondedTransactionLifetime': !runtime_1.exists(json, 'maxBondedTransactionLifetime') ? undefined : json['maxBondedTransactionLifetime'],
     };
 }
 exports.AggregateNetworkPropertiesDTOFromJSONTyped = AggregateNetworkPropertiesDTOFromJSONTyped;

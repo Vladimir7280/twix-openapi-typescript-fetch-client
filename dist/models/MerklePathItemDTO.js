@@ -39,8 +39,8 @@ function MerklePathItemDTOFromJSONTyped(json, ignoreDiscriminator) {
         return json;
     }
     return {
-        'position': !(0, runtime_1.exists)(json, 'position') ? undefined : json['position'],
-        'hash': !(0, runtime_1.exists)(json, 'hash') ? undefined : json['hash'],
+        'position': !runtime_1.exists(json, 'position') ? undefined : json['position'],
+        'hash': !runtime_1.exists(json, 'hash') ? undefined : json['hash'],
     };
 }
 exports.MerklePathItemDTOFromJSONTyped = MerklePathItemDTOFromJSONTyped;

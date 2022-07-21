@@ -43,8 +43,8 @@ function TransactionMetaDTOFromJSONTyped(json, ignoreDiscriminator) {
         'hash': json['hash'],
         'merkleComponentHash': json['merkleComponentHash'],
         'index': json['index'],
-        'timestamp': !(0, runtime_1.exists)(json, 'timestamp') ? undefined : json['timestamp'],
-        'feeMultiplier': !(0, runtime_1.exists)(json, 'feeMultiplier') ? undefined : json['feeMultiplier'],
+        'timestamp': !runtime_1.exists(json, 'timestamp') ? undefined : json['timestamp'],
+        'feeMultiplier': !runtime_1.exists(json, 'feeMultiplier') ? undefined : json['feeMultiplier'],
     };
 }
 exports.TransactionMetaDTOFromJSONTyped = TransactionMetaDTOFromJSONTyped;

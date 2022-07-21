@@ -39,7 +39,7 @@ function NamespaceNameDTOFromJSONTyped(json, ignoreDiscriminator) {
         return json;
     }
     return {
-        'parentId': !(0, runtime_1.exists)(json, 'parentId') ? undefined : json['parentId'],
+        'parentId': !runtime_1.exists(json, 'parentId') ? undefined : json['parentId'],
         'id': json['id'],
         'name': json['name'],
     };

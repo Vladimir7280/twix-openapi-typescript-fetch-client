@@ -61,9 +61,9 @@ class TransactionRoutesApi extends runtime.BaseAPI {
                 method: 'PUT',
                 headers: headerParameters,
                 query: queryParameters,
-                body: (0, models_1.CosignatureToJSON)(requestParameters.cosignature),
+                body: models_1.CosignatureToJSON(requestParameters.cosignature),
             });
-            return new runtime.JSONApiResponse(response, (jsonValue) => (0, models_1.AnnounceTransactionInfoDTOFromJSON)(jsonValue));
+            return new runtime.JSONApiResponse(response, (jsonValue) => models_1.AnnounceTransactionInfoDTOFromJSON(jsonValue));
         });
     }
     /**
@@ -93,9 +93,9 @@ class TransactionRoutesApi extends runtime.BaseAPI {
                 method: 'PUT',
                 headers: headerParameters,
                 query: queryParameters,
-                body: (0, models_1.TransactionPayloadToJSON)(requestParameters.transactionPayload),
+                body: models_1.TransactionPayloadToJSON(requestParameters.transactionPayload),
             });
-            return new runtime.JSONApiResponse(response, (jsonValue) => (0, models_1.AnnounceTransactionInfoDTOFromJSON)(jsonValue));
+            return new runtime.JSONApiResponse(response, (jsonValue) => models_1.AnnounceTransactionInfoDTOFromJSON(jsonValue));
         });
     }
     /**
@@ -125,9 +125,9 @@ class TransactionRoutesApi extends runtime.BaseAPI {
                 method: 'PUT',
                 headers: headerParameters,
                 query: queryParameters,
-                body: (0, models_1.TransactionPayloadToJSON)(requestParameters.transactionPayload),
+                body: models_1.TransactionPayloadToJSON(requestParameters.transactionPayload),
             });
-            return new runtime.JSONApiResponse(response, (jsonValue) => (0, models_1.AnnounceTransactionInfoDTOFromJSON)(jsonValue));
+            return new runtime.JSONApiResponse(response, (jsonValue) => models_1.AnnounceTransactionInfoDTOFromJSON(jsonValue));
         });
     }
     /**
@@ -157,7 +157,7 @@ class TransactionRoutesApi extends runtime.BaseAPI {
                 headers: headerParameters,
                 query: queryParameters,
             });
-            return new runtime.JSONApiResponse(response, (jsonValue) => (0, models_1.TransactionInfoDTOFromJSON)(jsonValue));
+            return new runtime.JSONApiResponse(response, (jsonValue) => models_1.TransactionInfoDTOFromJSON(jsonValue));
         });
     }
     /**
@@ -187,7 +187,7 @@ class TransactionRoutesApi extends runtime.BaseAPI {
                 method: 'POST',
                 headers: headerParameters,
                 query: queryParameters,
-                body: (0, models_1.TransactionIdsToJSON)(requestParameters.transactionIds),
+                body: models_1.TransactionIdsToJSON(requestParameters.transactionIds),
             });
             return new runtime.JSONApiResponse(response, (jsonValue) => jsonValue.map(models_1.TransactionInfoDTOFromJSON));
         });
@@ -219,7 +219,7 @@ class TransactionRoutesApi extends runtime.BaseAPI {
                 headers: headerParameters,
                 query: queryParameters,
             });
-            return new runtime.JSONApiResponse(response, (jsonValue) => (0, models_1.TransactionInfoDTOFromJSON)(jsonValue));
+            return new runtime.JSONApiResponse(response, (jsonValue) => models_1.TransactionInfoDTOFromJSON(jsonValue));
         });
     }
     /**
@@ -249,7 +249,7 @@ class TransactionRoutesApi extends runtime.BaseAPI {
                 method: 'POST',
                 headers: headerParameters,
                 query: queryParameters,
-                body: (0, models_1.TransactionIdsToJSON)(requestParameters.transactionIds),
+                body: models_1.TransactionIdsToJSON(requestParameters.transactionIds),
             });
             return new runtime.JSONApiResponse(response, (jsonValue) => jsonValue.map(models_1.TransactionInfoDTOFromJSON));
         });
@@ -281,7 +281,7 @@ class TransactionRoutesApi extends runtime.BaseAPI {
                 headers: headerParameters,
                 query: queryParameters,
             });
-            return new runtime.JSONApiResponse(response, (jsonValue) => (0, models_1.TransactionInfoDTOFromJSON)(jsonValue));
+            return new runtime.JSONApiResponse(response, (jsonValue) => models_1.TransactionInfoDTOFromJSON(jsonValue));
         });
     }
     /**
@@ -311,7 +311,7 @@ class TransactionRoutesApi extends runtime.BaseAPI {
                 method: 'POST',
                 headers: headerParameters,
                 query: queryParameters,
-                body: (0, models_1.TransactionIdsToJSON)(requestParameters.transactionIds),
+                body: models_1.TransactionIdsToJSON(requestParameters.transactionIds),
             });
             return new runtime.JSONApiResponse(response, (jsonValue) => jsonValue.map(models_1.TransactionInfoDTOFromJSON));
         });
@@ -385,7 +385,7 @@ class TransactionRoutesApi extends runtime.BaseAPI {
                 headers: headerParameters,
                 query: queryParameters,
             });
-            return new runtime.JSONApiResponse(response, (jsonValue) => (0, models_1.TransactionPageFromJSON)(jsonValue));
+            return new runtime.JSONApiResponse(response, (jsonValue) => models_1.TransactionPageFromJSON(jsonValue));
         });
     }
     /**
@@ -457,7 +457,7 @@ class TransactionRoutesApi extends runtime.BaseAPI {
                 headers: headerParameters,
                 query: queryParameters,
             });
-            return new runtime.JSONApiResponse(response, (jsonValue) => (0, models_1.TransactionPageFromJSON)(jsonValue));
+            return new runtime.JSONApiResponse(response, (jsonValue) => models_1.TransactionPageFromJSON(jsonValue));
         });
     }
     /**
@@ -529,7 +529,7 @@ class TransactionRoutesApi extends runtime.BaseAPI {
                 headers: headerParameters,
                 query: queryParameters,
             });
-            return new runtime.JSONApiResponse(response, (jsonValue) => (0, models_1.TransactionPageFromJSON)(jsonValue));
+            return new runtime.JSONApiResponse(response, (jsonValue) => models_1.TransactionPageFromJSON(jsonValue));
         });
     }
     /**

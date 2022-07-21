@@ -162,7 +162,7 @@ export interface ImportanceBlockDTO {
      * @type {string}
      * @memberof ImportanceBlockDTO
      */
-    totalSupply: string;
+    collectedEpochFees: string;
     /**
      * Absolute amount. An amount of 123456789 (absolute) for a mosaic with divisibility 6 means 123.456789 (relative).
      * @type {string}
@@ -174,13 +174,13 @@ export interface ImportanceBlockDTO {
      * @type {string}
      * @memberof ImportanceBlockDTO
      */
-    inflation: string;
+    totalSupply: string;
     /**
      * Absolute amount. An amount of 123456789 (absolute) for a mosaic with divisibility 6 means 123.456789 (relative).
      * @type {string}
      * @memberof ImportanceBlockDTO
      */
-    collectedEpochFees: string;
+    inflation: string;
     /**
      * A number that allows uint 32 values.
      * @type {number}
@@ -235,10 +235,10 @@ export function ImportanceBlockDTOFromJSONTyped(json: any, ignoreDiscriminator: 
         'stateHash': json['stateHash'],
         'beneficiaryAddress': json['beneficiaryAddress'],
         'feeMultiplier': json['feeMultiplier'],
-        'totalSupply': json['totalSupply'],
-        'feeToPay': json['feeToPay'],
-        'inflation': json['inflation'],
         'collectedEpochFees': json['collectedEpochFees'],
+        'feeToPay': json['feeToPay'],
+        'totalSupply': json['totalSupply'],
+        'inflation': json['inflation'],
         'votingEligibleAccountsCount': json['votingEligibleAccountsCount'],
         'harvestingEligibleAccountsCount': json['harvestingEligibleAccountsCount'],
         'totalVotingBalance': json['totalVotingBalance'],
@@ -273,10 +273,10 @@ export function ImportanceBlockDTOToJSON(value?: ImportanceBlockDTO | null): any
         'stateHash': value.stateHash,
         'beneficiaryAddress': value.beneficiaryAddress,
         'feeMultiplier': value.feeMultiplier,
-        'totalSupply': value.totalSupply,
-        'feeToPay': value.feeToPay,
-        'inflation': value.inflation,
         'collectedEpochFees': value.collectedEpochFees,
+        'feeToPay': value.feeToPay,
+        'totalSupply': value.totalSupply,
+        'inflation': value.inflation,
         'votingEligibleAccountsCount': value.votingEligibleAccountsCount,
         'harvestingEligibleAccountsCount': value.harvestingEligibleAccountsCount,
         'totalVotingBalance': value.totalVotingBalance,

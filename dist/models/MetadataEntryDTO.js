@@ -44,7 +44,7 @@ function MetadataEntryDTOFromJSONTyped(json, ignoreDiscriminator) {
         'sourceAddress': json['sourceAddress'],
         'targetAddress': json['targetAddress'],
         'scopedMetadataKey': json['scopedMetadataKey'],
-        'targetId': !(0, runtime_1.exists)(json, 'targetId') ? undefined : json['targetId'],
+        'targetId': !runtime_1.exists(json, 'targetId') ? undefined : json['targetId'],
         'metadataType': json['metadataType'],
         'value': json['value'],
     };

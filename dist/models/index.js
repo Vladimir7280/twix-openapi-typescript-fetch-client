@@ -7,7 +7,7 @@ var __createBinding = (this && this.__createBinding) || (Object.create ? (functi
     o[k2] = m[k];
 }));
 var __exportStar = (this && this.__exportStar) || function(m, exports) {
-    for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
+    for (var p in m) if (p !== "default" && !exports.hasOwnProperty(p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 __exportStar(require("./AccountAddressRestrictionTransactionBodyDTO"), exports);
@@ -87,6 +87,7 @@ __exportStar(require("./EmbeddedMultisigAccountModificationTransactionDTO"), exp
 __exportStar(require("./EmbeddedNamespaceMetadataTransactionDTO"), exports);
 __exportStar(require("./EmbeddedNamespaceRegistrationTransactionDTO"), exports);
 __exportStar(require("./EmbeddedNodeKeyLinkTransactionDTO"), exports);
+__exportStar(require("./EmbeddedPriceTransactionDTO"), exports);
 __exportStar(require("./EmbeddedSecretLockTransactionDTO"), exports);
 __exportStar(require("./EmbeddedSecretProofTransactionDTO"), exports);
 __exportStar(require("./EmbeddedTransactionBodyDTO"), exports);
@@ -199,6 +200,8 @@ __exportStar(require("./Pagination"), exports);
 __exportStar(require("./ParentPublicKeySignaturePair"), exports);
 __exportStar(require("./PluginsPropertiesDTO"), exports);
 __exportStar(require("./PositionEnum"), exports);
+__exportStar(require("./PriceTransactionBodyDTO"), exports);
+__exportStar(require("./PriceTransactionDTO"), exports);
 __exportStar(require("./ReceiptDTO"), exports);
 __exportStar(require("./ReceiptTypeEnum"), exports);
 __exportStar(require("./RentalFeesDTO"), exports);

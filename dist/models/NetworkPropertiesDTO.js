@@ -39,11 +39,11 @@ function NetworkPropertiesDTOFromJSONTyped(json, ignoreDiscriminator) {
         return json;
     }
     return {
-        'identifier': !(0, runtime_1.exists)(json, 'identifier') ? undefined : json['identifier'],
-        'nodeEqualityStrategy': !(0, runtime_1.exists)(json, 'nodeEqualityStrategy') ? undefined : json['nodeEqualityStrategy'],
-        'nemesisSignerPublicKey': !(0, runtime_1.exists)(json, 'nemesisSignerPublicKey') ? undefined : json['nemesisSignerPublicKey'],
-        'generationHashSeed': !(0, runtime_1.exists)(json, 'generationHashSeed') ? undefined : json['generationHashSeed'],
-        'epochAdjustment': !(0, runtime_1.exists)(json, 'epochAdjustment') ? undefined : json['epochAdjustment'],
+        'identifier': !runtime_1.exists(json, 'identifier') ? undefined : json['identifier'],
+        'nodeEqualityStrategy': !runtime_1.exists(json, 'nodeEqualityStrategy') ? undefined : json['nodeEqualityStrategy'],
+        'nemesisSignerPublicKey': !runtime_1.exists(json, 'nemesisSignerPublicKey') ? undefined : json['nemesisSignerPublicKey'],
+        'generationHashSeed': !runtime_1.exists(json, 'generationHashSeed') ? undefined : json['generationHashSeed'],
+        'epochAdjustment': !runtime_1.exists(json, 'epochAdjustment') ? undefined : json['epochAdjustment'],
     };
 }
 exports.NetworkPropertiesDTOFromJSONTyped = NetworkPropertiesDTOFromJSONTyped;

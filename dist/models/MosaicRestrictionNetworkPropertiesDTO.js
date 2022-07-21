@@ -39,7 +39,7 @@ function MosaicRestrictionNetworkPropertiesDTOFromJSONTyped(json, ignoreDiscrimi
         return json;
     }
     return {
-        'maxMosaicRestrictionValues': !(0, runtime_1.exists)(json, 'maxMosaicRestrictionValues') ? undefined : json['maxMosaicRestrictionValues'],
+        'maxMosaicRestrictionValues': !runtime_1.exists(json, 'maxMosaicRestrictionValues') ? undefined : json['maxMosaicRestrictionValues'],
     };
 }
 exports.MosaicRestrictionNetworkPropertiesDTOFromJSONTyped = MosaicRestrictionNetworkPropertiesDTOFromJSONTyped;

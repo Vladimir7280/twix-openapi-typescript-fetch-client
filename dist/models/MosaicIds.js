@@ -39,7 +39,7 @@ function MosaicIdsFromJSONTyped(json, ignoreDiscriminator) {
         return json;
     }
     return {
-        'mosaicIds': !(0, runtime_1.exists)(json, 'mosaicIds') ? undefined : json['mosaicIds'],
+        'mosaicIds': !runtime_1.exists(json, 'mosaicIds') ? undefined : json['mosaicIds'],
     };
 }
 exports.MosaicIdsFromJSONTyped = MosaicIdsFromJSONTyped;

@@ -170,7 +170,7 @@ export interface BlockDTO {
      * @type {string}
      * @memberof BlockDTO
      */
-    totalSupply: string;
+    collectedEpochFees: string;
     /**
      * Absolute amount. An amount of 123456789 (absolute) for a mosaic with divisibility 6 means 123.456789 (relative).
      * @type {string}
@@ -182,13 +182,13 @@ export interface BlockDTO {
      * @type {string}
      * @memberof BlockDTO
      */
-    inflation: string;
+    totalSupply: string;
     /**
      * Absolute amount. An amount of 123456789 (absolute) for a mosaic with divisibility 6 means 123.456789 (relative).
      * @type {string}
      * @memberof BlockDTO
      */
-    collectedEpochFees: string;
+    inflation: string;
 }
 
 export function BlockDTOFromJSON(json: any): BlockDTO {
@@ -219,10 +219,10 @@ export function BlockDTOFromJSONTyped(json: any, ignoreDiscriminator: boolean): 
         'stateHash': json['stateHash'],
         'beneficiaryAddress': json['beneficiaryAddress'],
         'feeMultiplier': json['feeMultiplier'],
-        'totalSupply': json['totalSupply'],
-        'feeToPay': json['feeToPay'],
-        'inflation': json['inflation'],
         'collectedEpochFees': json['collectedEpochFees'],
+        'feeToPay': json['feeToPay'],
+        'totalSupply': json['totalSupply'],
+        'inflation': json['inflation'],
     };
 }
 
@@ -253,10 +253,10 @@ export function BlockDTOToJSON(value?: BlockDTO | null): any {
         'stateHash': value.stateHash,
         'beneficiaryAddress': value.beneficiaryAddress,
         'feeMultiplier': value.feeMultiplier,
-        'totalSupply': value.totalSupply,
-        'feeToPay': value.feeToPay,
-        'inflation': value.inflation,
         'collectedEpochFees': value.collectedEpochFees,
+        'feeToPay': value.feeToPay,
+        'totalSupply': value.totalSupply,
+        'inflation': value.inflation,
     };
 }
 

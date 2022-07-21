@@ -58,7 +58,7 @@ class NetworkRoutesApi extends runtime.BaseAPI {
                 headers: headerParameters,
                 query: queryParameters,
             });
-            return new runtime.JSONApiResponse(response, (jsonValue) => (0, models_1.NetworkConfigurationDTOFromJSON)(jsonValue));
+            return new runtime.JSONApiResponse(response, (jsonValue) => models_1.NetworkConfigurationDTOFromJSON(jsonValue));
         });
     }
     /**
@@ -85,7 +85,7 @@ class NetworkRoutesApi extends runtime.BaseAPI {
                 headers: headerParameters,
                 query: queryParameters,
             });
-            return new runtime.JSONApiResponse(response, (jsonValue) => (0, models_1.NetworkTypeDTOFromJSON)(jsonValue));
+            return new runtime.JSONApiResponse(response, (jsonValue) => models_1.NetworkTypeDTOFromJSON(jsonValue));
         });
     }
     /**
@@ -112,7 +112,7 @@ class NetworkRoutesApi extends runtime.BaseAPI {
                 headers: headerParameters,
                 query: queryParameters,
             });
-            return new runtime.JSONApiResponse(response, (jsonValue) => (0, models_1.RentalFeesDTOFromJSON)(jsonValue));
+            return new runtime.JSONApiResponse(response, (jsonValue) => models_1.RentalFeesDTOFromJSON(jsonValue));
         });
     }
     /**
@@ -139,7 +139,7 @@ class NetworkRoutesApi extends runtime.BaseAPI {
                 headers: headerParameters,
                 query: queryParameters,
             });
-            return new runtime.JSONApiResponse(response, (jsonValue) => (0, models_1.TransactionFeesDTOFromJSON)(jsonValue));
+            return new runtime.JSONApiResponse(response, (jsonValue) => models_1.TransactionFeesDTOFromJSON(jsonValue));
         });
     }
     /**

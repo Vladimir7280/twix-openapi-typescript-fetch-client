@@ -28,22 +28,27 @@
  * Do not edit the class manually.
  */
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.NodeKeyLinkNetworkPropertiesDTOToJSON = exports.NodeKeyLinkNetworkPropertiesDTOFromJSONTyped = exports.NodeKeyLinkNetworkPropertiesDTOFromJSON = void 0;
-const runtime_1 = require("../runtime");
-function NodeKeyLinkNetworkPropertiesDTOFromJSON(json) {
-    return NodeKeyLinkNetworkPropertiesDTOFromJSONTyped(json, false);
+exports.EmbeddedPriceTransactionDTOToJSON = exports.EmbeddedPriceTransactionDTOFromJSONTyped = exports.EmbeddedPriceTransactionDTOFromJSON = void 0;
+function EmbeddedPriceTransactionDTOFromJSON(json) {
+    return EmbeddedPriceTransactionDTOFromJSONTyped(json, false);
 }
-exports.NodeKeyLinkNetworkPropertiesDTOFromJSON = NodeKeyLinkNetworkPropertiesDTOFromJSON;
-function NodeKeyLinkNetworkPropertiesDTOFromJSONTyped(json, ignoreDiscriminator) {
+exports.EmbeddedPriceTransactionDTOFromJSON = EmbeddedPriceTransactionDTOFromJSON;
+function EmbeddedPriceTransactionDTOFromJSONTyped(json, ignoreDiscriminator) {
     if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        'dummy': !runtime_1.exists(json, 'dummy') ? undefined : json['dummy'],
+        'signerPublicKey': json['signerPublicKey'],
+        'version': json['version'],
+        'network': json['network'],
+        'type': json['type'],
+        'blockHeight': json['blockHeight'],
+        'highPrice': json['highPrice'],
+        'lowPrice': json['lowPrice'],
     };
 }
-exports.NodeKeyLinkNetworkPropertiesDTOFromJSONTyped = NodeKeyLinkNetworkPropertiesDTOFromJSONTyped;
-function NodeKeyLinkNetworkPropertiesDTOToJSON(value) {
+exports.EmbeddedPriceTransactionDTOFromJSONTyped = EmbeddedPriceTransactionDTOFromJSONTyped;
+function EmbeddedPriceTransactionDTOToJSON(value) {
     if (value === undefined) {
         return undefined;
     }
@@ -51,7 +56,13 @@ function NodeKeyLinkNetworkPropertiesDTOToJSON(value) {
         return null;
     }
     return {
-        'dummy': value.dummy,
+        'signerPublicKey': value.signerPublicKey,
+        'version': value.version,
+        'network': value.network,
+        'type': value.type,
+        'blockHeight': value.blockHeight,
+        'highPrice': value.highPrice,
+        'lowPrice': value.lowPrice,
     };
 }
-exports.NodeKeyLinkNetworkPropertiesDTOToJSON = NodeKeyLinkNetworkPropertiesDTOToJSON;
+exports.EmbeddedPriceTransactionDTOToJSON = EmbeddedPriceTransactionDTOToJSON;

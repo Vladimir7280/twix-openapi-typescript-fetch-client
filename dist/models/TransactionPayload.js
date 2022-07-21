@@ -39,7 +39,7 @@ function TransactionPayloadFromJSONTyped(json, ignoreDiscriminator) {
         return json;
     }
     return {
-        'payload': !(0, runtime_1.exists)(json, 'payload') ? undefined : json['payload'],
+        'payload': !runtime_1.exists(json, 'payload') ? undefined : json['payload'],
     };
 }
 exports.TransactionPayloadFromJSONTyped = TransactionPayloadFromJSONTyped;

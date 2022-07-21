@@ -28,28 +28,31 @@
  * Do not edit the class manually.
  */
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.EmbeddedTransferTransactionDTOToJSON = exports.EmbeddedTransferTransactionDTOFromJSONTyped = exports.EmbeddedTransferTransactionDTOFromJSON = void 0;
-const runtime_1 = require("../runtime");
-function EmbeddedTransferTransactionDTOFromJSON(json) {
-    return EmbeddedTransferTransactionDTOFromJSONTyped(json, false);
+exports.PriceTransactionDTOToJSON = exports.PriceTransactionDTOFromJSONTyped = exports.PriceTransactionDTOFromJSON = void 0;
+function PriceTransactionDTOFromJSON(json) {
+    return PriceTransactionDTOFromJSONTyped(json, false);
 }
-exports.EmbeddedTransferTransactionDTOFromJSON = EmbeddedTransferTransactionDTOFromJSON;
-function EmbeddedTransferTransactionDTOFromJSONTyped(json, ignoreDiscriminator) {
+exports.PriceTransactionDTOFromJSON = PriceTransactionDTOFromJSON;
+function PriceTransactionDTOFromJSONTyped(json, ignoreDiscriminator) {
     if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
+        'size': json['size'],
+        'signature': json['signature'],
         'signerPublicKey': json['signerPublicKey'],
         'version': json['version'],
         'network': json['network'],
         'type': json['type'],
-        'recipientAddress': json['recipientAddress'],
-        'mosaics': json['mosaics'],
-        'message': !runtime_1.exists(json, 'message') ? undefined : json['message'],
+        'maxFee': json['maxFee'],
+        'deadline': json['deadline'],
+        'blockHeight': json['blockHeight'],
+        'highPrice': json['highPrice'],
+        'lowPrice': json['lowPrice'],
     };
 }
-exports.EmbeddedTransferTransactionDTOFromJSONTyped = EmbeddedTransferTransactionDTOFromJSONTyped;
-function EmbeddedTransferTransactionDTOToJSON(value) {
+exports.PriceTransactionDTOFromJSONTyped = PriceTransactionDTOFromJSONTyped;
+function PriceTransactionDTOToJSON(value) {
     if (value === undefined) {
         return undefined;
     }
@@ -57,13 +60,17 @@ function EmbeddedTransferTransactionDTOToJSON(value) {
         return null;
     }
     return {
+        'size': value.size,
+        'signature': value.signature,
         'signerPublicKey': value.signerPublicKey,
         'version': value.version,
         'network': value.network,
         'type': value.type,
-        'recipientAddress': value.recipientAddress,
-        'mosaics': value.mosaics,
-        'message': value.message,
+        'maxFee': value.maxFee,
+        'deadline': value.deadline,
+        'blockHeight': value.blockHeight,
+        'highPrice': value.highPrice,
+        'lowPrice': value.lowPrice,
     };
 }
-exports.EmbeddedTransferTransactionDTOToJSON = EmbeddedTransferTransactionDTOToJSON;
+exports.PriceTransactionDTOToJSON = PriceTransactionDTOToJSON;

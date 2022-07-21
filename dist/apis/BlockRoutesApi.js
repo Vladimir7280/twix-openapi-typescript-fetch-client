@@ -61,7 +61,7 @@ class BlockRoutesApi extends runtime.BaseAPI {
                 headers: headerParameters,
                 query: queryParameters,
             });
-            return new runtime.JSONApiResponse(response, (jsonValue) => (0, models_1.BlockInfoDTOFromJSON)(jsonValue));
+            return new runtime.JSONApiResponse(response, (jsonValue) => models_1.BlockInfoDTOFromJSON(jsonValue));
         });
     }
     /**
@@ -94,7 +94,7 @@ class BlockRoutesApi extends runtime.BaseAPI {
                 headers: headerParameters,
                 query: queryParameters,
             });
-            return new runtime.JSONApiResponse(response, (jsonValue) => (0, models_1.MerkleProofInfoDTOFromJSON)(jsonValue));
+            return new runtime.JSONApiResponse(response, (jsonValue) => models_1.MerkleProofInfoDTOFromJSON(jsonValue));
         });
     }
     /**
@@ -127,7 +127,7 @@ class BlockRoutesApi extends runtime.BaseAPI {
                 headers: headerParameters,
                 query: queryParameters,
             });
-            return new runtime.JSONApiResponse(response, (jsonValue) => (0, models_1.MerkleProofInfoDTOFromJSON)(jsonValue));
+            return new runtime.JSONApiResponse(response, (jsonValue) => models_1.MerkleProofInfoDTOFromJSON(jsonValue));
         });
     }
     /**
@@ -175,7 +175,7 @@ class BlockRoutesApi extends runtime.BaseAPI {
                 headers: headerParameters,
                 query: queryParameters,
             });
-            return new runtime.JSONApiResponse(response, (jsonValue) => (0, models_1.BlockPageFromJSON)(jsonValue));
+            return new runtime.JSONApiResponse(response, (jsonValue) => models_1.BlockPageFromJSON(jsonValue));
         });
     }
     /**

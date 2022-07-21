@@ -61,7 +61,7 @@ class SecretLockRoutesApi extends runtime.BaseAPI {
                 headers: headerParameters,
                 query: queryParameters,
             });
-            return new runtime.JSONApiResponse(response, (jsonValue) => (0, models_1.SecretLockInfoDTOFromJSON)(jsonValue));
+            return new runtime.JSONApiResponse(response, (jsonValue) => models_1.SecretLockInfoDTOFromJSON(jsonValue));
         });
     }
     /**
@@ -91,7 +91,7 @@ class SecretLockRoutesApi extends runtime.BaseAPI {
                 headers: headerParameters,
                 query: queryParameters,
             });
-            return new runtime.JSONApiResponse(response, (jsonValue) => (0, models_1.MerkleStateInfoDTOFromJSON)(jsonValue));
+            return new runtime.JSONApiResponse(response, (jsonValue) => models_1.MerkleStateInfoDTOFromJSON(jsonValue));
         });
     }
     /**
@@ -136,7 +136,7 @@ class SecretLockRoutesApi extends runtime.BaseAPI {
                 headers: headerParameters,
                 query: queryParameters,
             });
-            return new runtime.JSONApiResponse(response, (jsonValue) => (0, models_1.SecretLockPageFromJSON)(jsonValue));
+            return new runtime.JSONApiResponse(response, (jsonValue) => models_1.SecretLockPageFromJSON(jsonValue));
         });
     }
     /**

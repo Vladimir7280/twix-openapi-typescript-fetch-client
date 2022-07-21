@@ -39,10 +39,10 @@ function SupplementalPublicKeysDTOFromJSONTyped(json, ignoreDiscriminator) {
         return json;
     }
     return {
-        'linked': !(0, runtime_1.exists)(json, 'linked') ? undefined : json['linked'],
-        'node': !(0, runtime_1.exists)(json, 'node') ? undefined : json['node'],
-        'vrf': !(0, runtime_1.exists)(json, 'vrf') ? undefined : json['vrf'],
-        'voting': !(0, runtime_1.exists)(json, 'voting') ? undefined : json['voting'],
+        'linked': !runtime_1.exists(json, 'linked') ? undefined : json['linked'],
+        'node': !runtime_1.exists(json, 'node') ? undefined : json['node'],
+        'vrf': !runtime_1.exists(json, 'vrf') ? undefined : json['vrf'],
+        'voting': !runtime_1.exists(json, 'voting') ? undefined : json['voting'],
     };
 }
 exports.SupplementalPublicKeysDTOFromJSONTyped = SupplementalPublicKeysDTOFromJSONTyped;

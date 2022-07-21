@@ -61,7 +61,7 @@ class MultisigRoutesApi extends runtime.BaseAPI {
                 headers: headerParameters,
                 query: queryParameters,
             });
-            return new runtime.JSONApiResponse(response, (jsonValue) => (0, models_1.MultisigAccountInfoDTOFromJSON)(jsonValue));
+            return new runtime.JSONApiResponse(response, (jsonValue) => models_1.MultisigAccountInfoDTOFromJSON(jsonValue));
         });
     }
     /**
@@ -121,7 +121,7 @@ class MultisigRoutesApi extends runtime.BaseAPI {
                 headers: headerParameters,
                 query: queryParameters,
             });
-            return new runtime.JSONApiResponse(response, (jsonValue) => (0, models_1.MerkleStateInfoDTOFromJSON)(jsonValue));
+            return new runtime.JSONApiResponse(response, (jsonValue) => models_1.MerkleStateInfoDTOFromJSON(jsonValue));
         });
     }
     /**

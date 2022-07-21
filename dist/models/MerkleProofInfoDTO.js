@@ -39,7 +39,7 @@ function MerkleProofInfoDTOFromJSONTyped(json, ignoreDiscriminator) {
         return json;
     }
     return {
-        'merklePath': !(0, runtime_1.exists)(json, 'merklePath') ? undefined : json['merklePath'],
+        'merklePath': !runtime_1.exists(json, 'merklePath') ? undefined : json['merklePath'],
     };
 }
 exports.MerkleProofInfoDTOFromJSONTyped = MerkleProofInfoDTOFromJSONTyped;

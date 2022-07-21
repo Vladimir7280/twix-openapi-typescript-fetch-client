@@ -41,7 +41,7 @@ function NamespaceMetadataTransactionBodyDTOFromJSONTyped(json, ignoreDiscrimina
     return {
         'targetAddress': json['targetAddress'],
         'scopedMetadataKey': json['scopedMetadataKey'],
-        'targetNamespaceId': !(0, runtime_1.exists)(json, 'targetNamespaceId') ? undefined : json['targetNamespaceId'],
+        'targetNamespaceId': !runtime_1.exists(json, 'targetNamespaceId') ? undefined : json['targetNamespaceId'],
         'valueSizeDelta': json['valueSizeDelta'],
         'valueSize': json['valueSize'],
         'value': json['value'],

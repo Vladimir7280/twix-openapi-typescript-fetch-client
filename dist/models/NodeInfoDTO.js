@@ -47,7 +47,7 @@ function NodeInfoDTOFromJSONTyped(json, ignoreDiscriminator) {
         'networkIdentifier': json['networkIdentifier'],
         'friendlyName': json['friendlyName'],
         'host': json['host'],
-        'nodePublicKey': !(0, runtime_1.exists)(json, 'nodePublicKey') ? undefined : json['nodePublicKey'],
+        'nodePublicKey': !runtime_1.exists(json, 'nodePublicKey') ? undefined : json['nodePublicKey'],
     };
 }
 exports.NodeInfoDTOFromJSONTyped = NodeInfoDTOFromJSONTyped;

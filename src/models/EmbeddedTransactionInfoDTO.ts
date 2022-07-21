@@ -97,6 +97,10 @@ import {
     EmbeddedNodeKeyLinkTransactionDTOFromJSON,
     EmbeddedNodeKeyLinkTransactionDTOFromJSONTyped,
     EmbeddedNodeKeyLinkTransactionDTOToJSON,
+    EmbeddedPriceTransactionDTO,
+    EmbeddedPriceTransactionDTOFromJSON,
+    EmbeddedPriceTransactionDTOFromJSONTyped,
+    EmbeddedPriceTransactionDTOToJSON,
     EmbeddedSecretLockTransactionDTO,
     EmbeddedSecretLockTransactionDTOFromJSON,
     EmbeddedSecretLockTransactionDTOFromJSONTyped,
@@ -143,10 +147,10 @@ export interface EmbeddedTransactionInfoDTO {
     meta: EmbeddedTransactionMetaDTO;
     /**
      * 
-     * @type {EmbeddedAccountKeyLinkTransactionDTO | EmbeddedNodeKeyLinkTransactionDTO | EmbeddedVrfKeyLinkTransactionDTO | EmbeddedVotingKeyLinkTransactionDTO | EmbeddedHashLockTransactionDTO | EmbeddedSecretLockTransactionDTO | EmbeddedSecretProofTransactionDTO | EmbeddedAccountMetadataTransactionDTO | EmbeddedMosaicMetadataTransactionDTO | EmbeddedNamespaceMetadataTransactionDTO | EmbeddedMosaicDefinitionTransactionDTO | EmbeddedMosaicSupplyChangeTransactionDTO | EmbeddedNamespaceRegistrationTransactionDTO | EmbeddedAddressAliasTransactionDTO | EmbeddedMosaicAliasTransactionDTO | EmbeddedMultisigAccountModificationTransactionDTO | EmbeddedAccountAddressRestrictionTransactionDTO | EmbeddedAccountMosaicRestrictionTransactionDTO | EmbeddedAccountOperationRestrictionTransactionDTO | EmbeddedMosaicGlobalRestrictionTransactionDTO | EmbeddedMosaicAddressRestrictionTransactionDTO | EmbeddedTransferTransactionDTO}
+     * @type {EmbeddedAccountKeyLinkTransactionDTO | EmbeddedNodeKeyLinkTransactionDTO | EmbeddedVrfKeyLinkTransactionDTO | EmbeddedVotingKeyLinkTransactionDTO | EmbeddedHashLockTransactionDTO | EmbeddedSecretLockTransactionDTO | EmbeddedSecretProofTransactionDTO | EmbeddedAccountMetadataTransactionDTO | EmbeddedMosaicMetadataTransactionDTO | EmbeddedNamespaceMetadataTransactionDTO | EmbeddedMosaicDefinitionTransactionDTO | EmbeddedMosaicSupplyChangeTransactionDTO | EmbeddedNamespaceRegistrationTransactionDTO | EmbeddedAddressAliasTransactionDTO | EmbeddedMosaicAliasTransactionDTO | EmbeddedMultisigAccountModificationTransactionDTO | EmbeddedAccountAddressRestrictionTransactionDTO | EmbeddedAccountMosaicRestrictionTransactionDTO | EmbeddedAccountOperationRestrictionTransactionDTO | EmbeddedMosaicGlobalRestrictionTransactionDTO | EmbeddedMosaicAddressRestrictionTransactionDTO | EmbeddedTransferTransactionDTO | EmbeddedPriceTransactionDTO}
      * @memberof EmbeddedTransactionInfoDTO
      */
-    transaction: EmbeddedAccountKeyLinkTransactionDTO | EmbeddedNodeKeyLinkTransactionDTO | EmbeddedVrfKeyLinkTransactionDTO | EmbeddedVotingKeyLinkTransactionDTO | EmbeddedHashLockTransactionDTO | EmbeddedSecretLockTransactionDTO | EmbeddedSecretProofTransactionDTO | EmbeddedAccountMetadataTransactionDTO | EmbeddedMosaicMetadataTransactionDTO | EmbeddedNamespaceMetadataTransactionDTO | EmbeddedMosaicDefinitionTransactionDTO | EmbeddedMosaicSupplyChangeTransactionDTO | EmbeddedNamespaceRegistrationTransactionDTO | EmbeddedAddressAliasTransactionDTO | EmbeddedMosaicAliasTransactionDTO | EmbeddedMultisigAccountModificationTransactionDTO | EmbeddedAccountAddressRestrictionTransactionDTO | EmbeddedAccountMosaicRestrictionTransactionDTO | EmbeddedAccountOperationRestrictionTransactionDTO | EmbeddedMosaicGlobalRestrictionTransactionDTO | EmbeddedMosaicAddressRestrictionTransactionDTO | EmbeddedTransferTransactionDTO;
+    transaction: EmbeddedAccountKeyLinkTransactionDTO | EmbeddedNodeKeyLinkTransactionDTO | EmbeddedVrfKeyLinkTransactionDTO | EmbeddedVotingKeyLinkTransactionDTO | EmbeddedHashLockTransactionDTO | EmbeddedSecretLockTransactionDTO | EmbeddedSecretProofTransactionDTO | EmbeddedAccountMetadataTransactionDTO | EmbeddedMosaicMetadataTransactionDTO | EmbeddedNamespaceMetadataTransactionDTO | EmbeddedMosaicDefinitionTransactionDTO | EmbeddedMosaicSupplyChangeTransactionDTO | EmbeddedNamespaceRegistrationTransactionDTO | EmbeddedAddressAliasTransactionDTO | EmbeddedMosaicAliasTransactionDTO | EmbeddedMultisigAccountModificationTransactionDTO | EmbeddedAccountAddressRestrictionTransactionDTO | EmbeddedAccountMosaicRestrictionTransactionDTO | EmbeddedAccountOperationRestrictionTransactionDTO | EmbeddedMosaicGlobalRestrictionTransactionDTO | EmbeddedMosaicAddressRestrictionTransactionDTO | EmbeddedTransferTransactionDTO | EmbeddedPriceTransactionDTO;
 }
 
 export function EmbeddedTransactionInfoDTOFromJSON(json: any): EmbeddedTransactionInfoDTO {

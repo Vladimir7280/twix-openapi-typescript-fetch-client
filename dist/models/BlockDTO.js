@@ -56,10 +56,10 @@ function BlockDTOFromJSONTyped(json, ignoreDiscriminator) {
         'stateHash': json['stateHash'],
         'beneficiaryAddress': json['beneficiaryAddress'],
         'feeMultiplier': json['feeMultiplier'],
-        'totalSupply': json['totalSupply'],
-        'feeToPay': json['feeToPay'],
-        'inflation': json['inflation'],
         'collectedEpochFees': json['collectedEpochFees'],
+        'feeToPay': json['feeToPay'],
+        'totalSupply': json['totalSupply'],
+        'inflation': json['inflation'],
     };
 }
 exports.BlockDTOFromJSONTyped = BlockDTOFromJSONTyped;
@@ -89,10 +89,10 @@ function BlockDTOToJSON(value) {
         'stateHash': value.stateHash,
         'beneficiaryAddress': value.beneficiaryAddress,
         'feeMultiplier': value.feeMultiplier,
-        'totalSupply': value.totalSupply,
-        'feeToPay': value.feeToPay,
-        'inflation': value.inflation,
         'collectedEpochFees': value.collectedEpochFees,
+        'feeToPay': value.feeToPay,
+        'totalSupply': value.totalSupply,
+        'inflation': value.inflation,
     };
 }
 exports.BlockDTOToJSON = BlockDTOToJSON;

@@ -73,7 +73,7 @@ class ReceiptRoutesApi extends runtime.BaseAPI {
                 headers: headerParameters,
                 query: queryParameters,
             });
-            return new runtime.JSONApiResponse(response, (jsonValue) => (0, models_1.ResolutionStatementPageFromJSON)(jsonValue));
+            return new runtime.JSONApiResponse(response, (jsonValue) => models_1.ResolutionStatementPageFromJSON(jsonValue));
         });
     }
     /**
@@ -115,7 +115,7 @@ class ReceiptRoutesApi extends runtime.BaseAPI {
                 headers: headerParameters,
                 query: queryParameters,
             });
-            return new runtime.JSONApiResponse(response, (jsonValue) => (0, models_1.ResolutionStatementPageFromJSON)(jsonValue));
+            return new runtime.JSONApiResponse(response, (jsonValue) => models_1.ResolutionStatementPageFromJSON(jsonValue));
         });
     }
     /**
@@ -178,7 +178,7 @@ class ReceiptRoutesApi extends runtime.BaseAPI {
                 headers: headerParameters,
                 query: queryParameters,
             });
-            return new runtime.JSONApiResponse(response, (jsonValue) => (0, models_1.TransactionStatementPageFromJSON)(jsonValue));
+            return new runtime.JSONApiResponse(response, (jsonValue) => models_1.TransactionStatementPageFromJSON(jsonValue));
         });
     }
     /**

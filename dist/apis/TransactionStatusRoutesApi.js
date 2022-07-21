@@ -61,7 +61,7 @@ class TransactionStatusRoutesApi extends runtime.BaseAPI {
                 headers: headerParameters,
                 query: queryParameters,
             });
-            return new runtime.JSONApiResponse(response, (jsonValue) => (0, models_1.TransactionStatusDTOFromJSON)(jsonValue));
+            return new runtime.JSONApiResponse(response, (jsonValue) => models_1.TransactionStatusDTOFromJSON(jsonValue));
         });
     }
     /**
@@ -91,7 +91,7 @@ class TransactionStatusRoutesApi extends runtime.BaseAPI {
                 method: 'POST',
                 headers: headerParameters,
                 query: queryParameters,
-                body: (0, models_1.TransactionHashesToJSON)(requestParameters.transactionHashes),
+                body: models_1.TransactionHashesToJSON(requestParameters.transactionHashes),
             });
             return new runtime.JSONApiResponse(response, (jsonValue) => jsonValue.map(models_1.TransactionStatusDTOFromJSON));
         });

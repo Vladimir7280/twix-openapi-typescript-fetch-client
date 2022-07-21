@@ -61,7 +61,7 @@ class AccountRoutesApi extends runtime.BaseAPI {
                 headers: headerParameters,
                 query: queryParameters,
             });
-            return new runtime.JSONApiResponse(response, (jsonValue) => (0, models_1.AccountInfoDTOFromJSON)(jsonValue));
+            return new runtime.JSONApiResponse(response, (jsonValue) => models_1.AccountInfoDTOFromJSON(jsonValue));
         });
     }
     /**
@@ -91,7 +91,7 @@ class AccountRoutesApi extends runtime.BaseAPI {
                 headers: headerParameters,
                 query: queryParameters,
             });
-            return new runtime.JSONApiResponse(response, (jsonValue) => (0, models_1.MerkleStateInfoDTOFromJSON)(jsonValue));
+            return new runtime.JSONApiResponse(response, (jsonValue) => models_1.MerkleStateInfoDTOFromJSON(jsonValue));
         });
     }
     /**
@@ -118,7 +118,7 @@ class AccountRoutesApi extends runtime.BaseAPI {
                 method: 'POST',
                 headers: headerParameters,
                 query: queryParameters,
-                body: (0, models_1.AccountIdsToJSON)(requestParameters.accountIds),
+                body: models_1.AccountIdsToJSON(requestParameters.accountIds),
             });
             return new runtime.JSONApiResponse(response, (jsonValue) => jsonValue.map(models_1.AccountInfoDTOFromJSON));
         });
@@ -165,7 +165,7 @@ class AccountRoutesApi extends runtime.BaseAPI {
                 headers: headerParameters,
                 query: queryParameters,
             });
-            return new runtime.JSONApiResponse(response, (jsonValue) => (0, models_1.AccountPageFromJSON)(jsonValue));
+            return new runtime.JSONApiResponse(response, (jsonValue) => models_1.AccountPageFromJSON(jsonValue));
         });
     }
     /**

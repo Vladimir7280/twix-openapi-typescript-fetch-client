@@ -41,7 +41,7 @@ function TransferTransactionBodyDTOFromJSONTyped(json, ignoreDiscriminator) {
     return {
         'recipientAddress': json['recipientAddress'],
         'mosaics': json['mosaics'],
-        'message': !(0, runtime_1.exists)(json, 'message') ? undefined : json['message'],
+        'message': !runtime_1.exists(json, 'message') ? undefined : json['message'],
     };
 }
 exports.TransferTransactionBodyDTOFromJSONTyped = TransferTransactionBodyDTOFromJSONTyped;

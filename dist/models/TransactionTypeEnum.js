@@ -55,6 +55,7 @@ exports.TransactionTypeEnumToJSON = exports.TransactionTypeEnumFromJSONTyped = e
  * * 0x4151 (16721 decimal) - MosaicGlobalRestrictionTransaction.
  * * 0x4251 (16977 decimal) - MosaicAddressRestrictionTransaction.
  * * 0x4154 (16724 decimal) - TransferTransaction.
+ * * 0x4156 (16726 decimal) - PriceTransaction.
  * @export
  * @enum {string}
  */
@@ -84,6 +85,7 @@ var TransactionTypeEnum;
     TransactionTypeEnum[TransactionTypeEnum["NUMBER_16721"] = 16721] = "NUMBER_16721";
     TransactionTypeEnum[TransactionTypeEnum["NUMBER_16977"] = 16977] = "NUMBER_16977";
     TransactionTypeEnum[TransactionTypeEnum["NUMBER_16724"] = 16724] = "NUMBER_16724";
+    TransactionTypeEnum[TransactionTypeEnum["NUMBER_16726"] = 16726] = "NUMBER_16726";
 })(TransactionTypeEnum = exports.TransactionTypeEnum || (exports.TransactionTypeEnum = {}));
 function TransactionTypeEnumFromJSON(json) {
     return TransactionTypeEnumFromJSONTyped(json, false);
