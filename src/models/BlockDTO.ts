@@ -194,7 +194,7 @@ export interface BlockDTO {
      * @type {string}
      * @memberof BlockDTO
      */
-     inflationMultiplier: string;
+    inflationMultiplier: string;
 }
 
 export function BlockDTOFromJSON(json: any): BlockDTO {

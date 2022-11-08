@@ -111,6 +111,13 @@ export interface BlockDTOAllOf {
      * @memberof BlockDTOAllOf
      */
     inflation: string;
+    /**
+     * Absolute amount. An amount of 123456789 (absolute) for a mosaic with divisibility 6 means 123.456789 (relative).
+     * @type {string}
+     * @memberof BlockDTOAllOf
+     */
+    inflationMultiplier: string;
+
 }
 export declare function BlockDTOAllOfFromJSON(json: any): BlockDTOAllOf;
 export declare function BlockDTOAllOfFromJSONTyped(json: any, ignoreDiscriminator: boolean): BlockDTOAllOf;

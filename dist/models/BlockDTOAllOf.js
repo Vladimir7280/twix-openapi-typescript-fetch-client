@@ -54,6 +54,7 @@ function BlockDTOAllOfFromJSONTyped(json, ignoreDiscriminator) {
         'feeToPay': json['feeToPay'],
         'totalSupply': json['totalSupply'],
         'inflation': json['inflation'],
+        'inflationMultiplier': json['inflationMultiplier'],
     };
 }
 exports.BlockDTOAllOfFromJSONTyped = BlockDTOAllOfFromJSONTyped;
@@ -81,6 +82,7 @@ function BlockDTOAllOfToJSON(value) {
         'feeToPay': value.feeToPay,
         'totalSupply': value.totalSupply,
         'inflation': value.inflation,
+        'inflationMultiplier': value.inflationMultiplier,
     };
 }
 exports.BlockDTOAllOfToJSON = BlockDTOAllOfToJSON;
