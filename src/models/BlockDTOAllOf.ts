@@ -136,6 +136,7 @@ export interface BlockDTOAllOf {
      * @memberof BlockDTOAllOf
      */
     inflationMultiplier: string;
+
 }
 
 export function BlockDTOAllOfFromJSON(json: any): BlockDTOAllOf {
