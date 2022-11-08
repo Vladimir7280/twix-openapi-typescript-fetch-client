@@ -39,7 +39,7 @@ function NamespaceIdsFromJSONTyped(json, ignoreDiscriminator) {
         return json;
     }
     return {
-        'namespaceIds': !runtime_1.exists(json, 'namespaceIds') ? undefined : json['namespaceIds'],
+        'namespaceIds': !(0, runtime_1.exists)(json, 'namespaceIds') ? undefined : json['namespaceIds'],
     };
 }
 exports.NamespaceIdsFromJSONTyped = NamespaceIdsFromJSONTyped;

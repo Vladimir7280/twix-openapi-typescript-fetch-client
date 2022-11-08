@@ -43,8 +43,8 @@ function EmbeddedTransactionMetaDTOFromJSONTyped(json, ignoreDiscriminator) {
         'aggregateHash': json['aggregateHash'],
         'aggregateId': json['aggregateId'],
         'index': json['index'],
-        'timestamp': !runtime_1.exists(json, 'timestamp') ? undefined : json['timestamp'],
-        'feeMultiplier': !runtime_1.exists(json, 'feeMultiplier') ? undefined : json['feeMultiplier'],
+        'timestamp': !(0, runtime_1.exists)(json, 'timestamp') ? undefined : json['timestamp'],
+        'feeMultiplier': !(0, runtime_1.exists)(json, 'feeMultiplier') ? undefined : json['feeMultiplier'],
     };
 }
 exports.EmbeddedTransactionMetaDTOFromJSONTyped = EmbeddedTransactionMetaDTOFromJSONTyped;

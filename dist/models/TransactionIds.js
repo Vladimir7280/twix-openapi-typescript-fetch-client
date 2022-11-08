@@ -39,7 +39,7 @@ function TransactionIdsFromJSONTyped(json, ignoreDiscriminator) {
         return json;
     }
     return {
-        'transactionIds': !runtime_1.exists(json, 'transactionIds') ? undefined : json['transactionIds'],
+        'transactionIds': !(0, runtime_1.exists)(json, 'transactionIds') ? undefined : json['transactionIds'],
     };
 }
 exports.TransactionIdsFromJSONTyped = TransactionIdsFromJSONTyped;

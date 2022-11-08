@@ -39,17 +39,17 @@ function PluginsPropertiesDTOFromJSONTyped(json, ignoreDiscriminator) {
         return json;
     }
     return {
-        'accountlink': !runtime_1.exists(json, 'accountlink') ? undefined : json['accountlink'],
-        'aggregate': !runtime_1.exists(json, 'aggregate') ? undefined : json['aggregate'],
-        'lockhash': !runtime_1.exists(json, 'lockhash') ? undefined : json['lockhash'],
-        'locksecret': !runtime_1.exists(json, 'locksecret') ? undefined : json['locksecret'],
-        'metadata': !runtime_1.exists(json, 'metadata') ? undefined : json['metadata'],
-        'mosaic': !runtime_1.exists(json, 'mosaic') ? undefined : json['mosaic'],
-        'multisig': !runtime_1.exists(json, 'multisig') ? undefined : json['multisig'],
-        'namespace': !runtime_1.exists(json, 'namespace') ? undefined : json['namespace'],
-        'restrictionaccount': !runtime_1.exists(json, 'restrictionaccount') ? undefined : json['restrictionaccount'],
-        'restrictionmosaic': !runtime_1.exists(json, 'restrictionmosaic') ? undefined : json['restrictionmosaic'],
-        'transfer': !runtime_1.exists(json, 'transfer') ? undefined : json['transfer'],
+        'accountlink': !(0, runtime_1.exists)(json, 'accountlink') ? undefined : json['accountlink'],
+        'aggregate': !(0, runtime_1.exists)(json, 'aggregate') ? undefined : json['aggregate'],
+        'lockhash': !(0, runtime_1.exists)(json, 'lockhash') ? undefined : json['lockhash'],
+        'locksecret': !(0, runtime_1.exists)(json, 'locksecret') ? undefined : json['locksecret'],
+        'metadata': !(0, runtime_1.exists)(json, 'metadata') ? undefined : json['metadata'],
+        'mosaic': !(0, runtime_1.exists)(json, 'mosaic') ? undefined : json['mosaic'],
+        'multisig': !(0, runtime_1.exists)(json, 'multisig') ? undefined : json['multisig'],
+        'namespace': !(0, runtime_1.exists)(json, 'namespace') ? undefined : json['namespace'],
+        'restrictionaccount': !(0, runtime_1.exists)(json, 'restrictionaccount') ? undefined : json['restrictionaccount'],
+        'restrictionmosaic': !(0, runtime_1.exists)(json, 'restrictionmosaic') ? undefined : json['restrictionmosaic'],
+        'transfer': !(0, runtime_1.exists)(json, 'transfer') ? undefined : json['transfer'],
     };
 }
 exports.PluginsPropertiesDTOFromJSONTyped = PluginsPropertiesDTOFromJSONTyped;

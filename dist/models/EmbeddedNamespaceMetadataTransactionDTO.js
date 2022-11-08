@@ -45,7 +45,7 @@ function EmbeddedNamespaceMetadataTransactionDTOFromJSONTyped(json, ignoreDiscri
         'type': json['type'],
         'targetAddress': json['targetAddress'],
         'scopedMetadataKey': json['scopedMetadataKey'],
-        'targetNamespaceId': !runtime_1.exists(json, 'targetNamespaceId') ? undefined : json['targetNamespaceId'],
+        'targetNamespaceId': !(0, runtime_1.exists)(json, 'targetNamespaceId') ? undefined : json['targetNamespaceId'],
         'valueSizeDelta': json['valueSizeDelta'],
         'valueSize': json['valueSize'],
         'value': json['value'],

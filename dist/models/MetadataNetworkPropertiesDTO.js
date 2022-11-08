@@ -39,7 +39,7 @@ function MetadataNetworkPropertiesDTOFromJSONTyped(json, ignoreDiscriminator) {
         return json;
     }
     return {
-        'maxValueSize': !runtime_1.exists(json, 'maxValueSize') ? undefined : json['maxValueSize'],
+        'maxValueSize': !(0, runtime_1.exists)(json, 'maxValueSize') ? undefined : json['maxValueSize'],
     };
 }
 exports.MetadataNetworkPropertiesDTOFromJSONTyped = MetadataNetworkPropertiesDTOFromJSONTyped;

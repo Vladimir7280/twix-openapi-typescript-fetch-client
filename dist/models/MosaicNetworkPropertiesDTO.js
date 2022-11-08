@@ -39,11 +39,11 @@ function MosaicNetworkPropertiesDTOFromJSONTyped(json, ignoreDiscriminator) {
         return json;
     }
     return {
-        'maxMosaicsPerAccount': !runtime_1.exists(json, 'maxMosaicsPerAccount') ? undefined : json['maxMosaicsPerAccount'],
-        'maxMosaicDuration': !runtime_1.exists(json, 'maxMosaicDuration') ? undefined : json['maxMosaicDuration'],
-        'maxMosaicDivisibility': !runtime_1.exists(json, 'maxMosaicDivisibility') ? undefined : json['maxMosaicDivisibility'],
-        'mosaicRentalFeeSinkAddress': !runtime_1.exists(json, 'mosaicRentalFeeSinkAddress') ? undefined : json['mosaicRentalFeeSinkAddress'],
-        'mosaicRentalFee': !runtime_1.exists(json, 'mosaicRentalFee') ? undefined : json['mosaicRentalFee'],
+        'maxMosaicsPerAccount': !(0, runtime_1.exists)(json, 'maxMosaicsPerAccount') ? undefined : json['maxMosaicsPerAccount'],
+        'maxMosaicDuration': !(0, runtime_1.exists)(json, 'maxMosaicDuration') ? undefined : json['maxMosaicDuration'],
+        'maxMosaicDivisibility': !(0, runtime_1.exists)(json, 'maxMosaicDivisibility') ? undefined : json['maxMosaicDivisibility'],
+        'mosaicRentalFeeSinkAddress': !(0, runtime_1.exists)(json, 'mosaicRentalFeeSinkAddress') ? undefined : json['mosaicRentalFeeSinkAddress'],
+        'mosaicRentalFee': !(0, runtime_1.exists)(json, 'mosaicRentalFee') ? undefined : json['mosaicRentalFee'],
     };
 }
 exports.MosaicNetworkPropertiesDTOFromJSONTyped = MosaicNetworkPropertiesDTOFromJSONTyped;

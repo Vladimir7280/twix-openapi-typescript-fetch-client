@@ -45,7 +45,7 @@ function EmbeddedTransferTransactionDTOFromJSONTyped(json, ignoreDiscriminator) 
         'type': json['type'],
         'recipientAddress': json['recipientAddress'],
         'mosaics': json['mosaics'],
-        'message': !runtime_1.exists(json, 'message') ? undefined : json['message'],
+        'message': !(0, runtime_1.exists)(json, 'message') ? undefined : json['message'],
     };
 }
 exports.EmbeddedTransferTransactionDTOFromJSONTyped = EmbeddedTransferTransactionDTOFromJSONTyped;

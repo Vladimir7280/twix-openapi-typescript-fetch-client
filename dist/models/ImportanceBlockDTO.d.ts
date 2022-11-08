@@ -149,6 +149,12 @@ export interface ImportanceBlockDTO {
      */
     inflation: string;
     /**
+     * Absolute amount. An amount of 123456789 (absolute) for a mosaic with divisibility 6 means 123.456789 (relative).
+     * @type {string}
+     * @memberof ImportanceBlockDTO
+     */
+    inflationMultiplier: string;
+    /**
      * A number that allows uint 32 values.
      * @type {number}
      * @memberof ImportanceBlockDTO

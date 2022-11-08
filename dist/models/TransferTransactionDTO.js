@@ -49,7 +49,7 @@ function TransferTransactionDTOFromJSONTyped(json, ignoreDiscriminator) {
         'deadline': json['deadline'],
         'recipientAddress': json['recipientAddress'],
         'mosaics': json['mosaics'],
-        'message': !runtime_1.exists(json, 'message') ? undefined : json['message'],
+        'message': !(0, runtime_1.exists)(json, 'message') ? undefined : json['message'],
     };
 }
 exports.TransferTransactionDTOFromJSONTyped = TransferTransactionDTOFromJSONTyped;

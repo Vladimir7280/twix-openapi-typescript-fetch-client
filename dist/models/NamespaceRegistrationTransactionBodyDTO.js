@@ -39,8 +39,8 @@ function NamespaceRegistrationTransactionBodyDTOFromJSONTyped(json, ignoreDiscri
         return json;
     }
     return {
-        'duration': !runtime_1.exists(json, 'duration') ? undefined : json['duration'],
-        'parentId': !runtime_1.exists(json, 'parentId') ? undefined : json['parentId'],
+        'duration': !(0, runtime_1.exists)(json, 'duration') ? undefined : json['duration'],
+        'parentId': !(0, runtime_1.exists)(json, 'parentId') ? undefined : json['parentId'],
         'id': json['id'],
         'registrationType': json['registrationType'],
         'name': json['name'],

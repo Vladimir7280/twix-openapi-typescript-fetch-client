@@ -39,7 +39,7 @@ function AddressesFromJSONTyped(json, ignoreDiscriminator) {
         return json;
     }
     return {
-        'addresses': !runtime_1.exists(json, 'addresses') ? undefined : json['addresses'],
+        'addresses': !(0, runtime_1.exists)(json, 'addresses') ? undefined : json['addresses'],
     };
 }
 exports.AddressesFromJSONTyped = AddressesFromJSONTyped;

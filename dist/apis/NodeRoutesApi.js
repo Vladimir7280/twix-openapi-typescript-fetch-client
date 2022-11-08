@@ -58,7 +58,7 @@ class NodeRoutesApi extends runtime.BaseAPI {
                 headers: headerParameters,
                 query: queryParameters,
             });
-            return new runtime.JSONApiResponse(response, (jsonValue) => models_1.NodeHealthInfoDTOFromJSON(jsonValue));
+            return new runtime.JSONApiResponse(response, (jsonValue) => (0, models_1.NodeHealthInfoDTOFromJSON)(jsonValue));
         });
     }
     /**
@@ -85,7 +85,7 @@ class NodeRoutesApi extends runtime.BaseAPI {
                 headers: headerParameters,
                 query: queryParameters,
             });
-            return new runtime.JSONApiResponse(response, (jsonValue) => models_1.NodeInfoDTOFromJSON(jsonValue));
+            return new runtime.JSONApiResponse(response, (jsonValue) => (0, models_1.NodeInfoDTOFromJSON)(jsonValue));
         });
     }
     /**
@@ -139,7 +139,7 @@ class NodeRoutesApi extends runtime.BaseAPI {
                 headers: headerParameters,
                 query: queryParameters,
             });
-            return new runtime.JSONApiResponse(response, (jsonValue) => models_1.StorageInfoDTOFromJSON(jsonValue));
+            return new runtime.JSONApiResponse(response, (jsonValue) => (0, models_1.StorageInfoDTOFromJSON)(jsonValue));
         });
     }
     /**
@@ -166,7 +166,7 @@ class NodeRoutesApi extends runtime.BaseAPI {
                 headers: headerParameters,
                 query: queryParameters,
             });
-            return new runtime.JSONApiResponse(response, (jsonValue) => models_1.NodeTimeDTOFromJSON(jsonValue));
+            return new runtime.JSONApiResponse(response, (jsonValue) => (0, models_1.NodeTimeDTOFromJSON)(jsonValue));
         });
     }
     /**
@@ -193,7 +193,7 @@ class NodeRoutesApi extends runtime.BaseAPI {
                 headers: headerParameters,
                 query: queryParameters,
             });
-            return new runtime.JSONApiResponse(response, (jsonValue) => models_1.ServerInfoDTOFromJSON(jsonValue));
+            return new runtime.JSONApiResponse(response, (jsonValue) => (0, models_1.ServerInfoDTOFromJSON)(jsonValue));
         });
     }
     /**
@@ -220,7 +220,7 @@ class NodeRoutesApi extends runtime.BaseAPI {
                 headers: headerParameters,
                 query: queryParameters,
             });
-            return new runtime.JSONApiResponse(response, (jsonValue) => models_1.UnlockedAccountDTOFromJSON(jsonValue));
+            return new runtime.JSONApiResponse(response, (jsonValue) => (0, models_1.UnlockedAccountDTOFromJSON)(jsonValue));
         });
     }
     /**

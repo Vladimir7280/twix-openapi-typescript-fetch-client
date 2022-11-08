@@ -39,7 +39,7 @@ function TransferNetworkPropertiesDTOFromJSONTyped(json, ignoreDiscriminator) {
         return json;
     }
     return {
-        'maxMessageSize': !runtime_1.exists(json, 'maxMessageSize') ? undefined : json['maxMessageSize'],
+        'maxMessageSize': !(0, runtime_1.exists)(json, 'maxMessageSize') ? undefined : json['maxMessageSize'],
     };
 }
 exports.TransferNetworkPropertiesDTOFromJSONTyped = TransferNetworkPropertiesDTOFromJSONTyped;

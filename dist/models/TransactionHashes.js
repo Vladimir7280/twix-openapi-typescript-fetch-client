@@ -39,7 +39,7 @@ function TransactionHashesFromJSONTyped(json, ignoreDiscriminator) {
         return json;
     }
     return {
-        'hashes': !runtime_1.exists(json, 'hashes') ? undefined : json['hashes'],
+        'hashes': !(0, runtime_1.exists)(json, 'hashes') ? undefined : json['hashes'],
     };
 }
 exports.TransactionHashesFromJSONTyped = TransactionHashesFromJSONTyped;

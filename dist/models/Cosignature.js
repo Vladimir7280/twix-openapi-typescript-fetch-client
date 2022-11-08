@@ -39,10 +39,10 @@ function CosignatureFromJSONTyped(json, ignoreDiscriminator) {
         return json;
     }
     return {
-        'parentHash': !runtime_1.exists(json, 'parentHash') ? undefined : json['parentHash'],
-        'signature': !runtime_1.exists(json, 'signature') ? undefined : json['signature'],
-        'signerPublicKey': !runtime_1.exists(json, 'signerPublicKey') ? undefined : json['signerPublicKey'],
-        'version': !runtime_1.exists(json, 'version') ? undefined : json['version'],
+        'parentHash': !(0, runtime_1.exists)(json, 'parentHash') ? undefined : json['parentHash'],
+        'signature': !(0, runtime_1.exists)(json, 'signature') ? undefined : json['signature'],
+        'signerPublicKey': !(0, runtime_1.exists)(json, 'signerPublicKey') ? undefined : json['signerPublicKey'],
+        'version': !(0, runtime_1.exists)(json, 'version') ? undefined : json['version'],
     };
 }
 exports.CosignatureFromJSONTyped = CosignatureFromJSONTyped;

@@ -61,9 +61,9 @@ class NamespaceRoutesApi extends runtime.BaseAPI {
                 method: 'POST',
                 headers: headerParameters,
                 query: queryParameters,
-                body: models_1.AddressesToJSON(requestParameters.addresses),
+                body: (0, models_1.AddressesToJSON)(requestParameters.addresses),
             });
-            return new runtime.JSONApiResponse(response, (jsonValue) => models_1.AccountsNamesDTOFromJSON(jsonValue));
+            return new runtime.JSONApiResponse(response, (jsonValue) => (0, models_1.AccountsNamesDTOFromJSON)(jsonValue));
         });
     }
     /**
@@ -93,9 +93,9 @@ class NamespaceRoutesApi extends runtime.BaseAPI {
                 method: 'POST',
                 headers: headerParameters,
                 query: queryParameters,
-                body: models_1.MosaicIdsToJSON(requestParameters.mosaicIds),
+                body: (0, models_1.MosaicIdsToJSON)(requestParameters.mosaicIds),
             });
-            return new runtime.JSONApiResponse(response, (jsonValue) => models_1.MosaicsNamesDTOFromJSON(jsonValue));
+            return new runtime.JSONApiResponse(response, (jsonValue) => (0, models_1.MosaicsNamesDTOFromJSON)(jsonValue));
         });
     }
     /**
@@ -125,7 +125,7 @@ class NamespaceRoutesApi extends runtime.BaseAPI {
                 headers: headerParameters,
                 query: queryParameters,
             });
-            return new runtime.JSONApiResponse(response, (jsonValue) => models_1.NamespaceInfoDTOFromJSON(jsonValue));
+            return new runtime.JSONApiResponse(response, (jsonValue) => (0, models_1.NamespaceInfoDTOFromJSON)(jsonValue));
         });
     }
     /**
@@ -155,7 +155,7 @@ class NamespaceRoutesApi extends runtime.BaseAPI {
                 headers: headerParameters,
                 query: queryParameters,
             });
-            return new runtime.JSONApiResponse(response, (jsonValue) => models_1.MerkleStateInfoDTOFromJSON(jsonValue));
+            return new runtime.JSONApiResponse(response, (jsonValue) => (0, models_1.MerkleStateInfoDTOFromJSON)(jsonValue));
         });
     }
     /**
@@ -185,7 +185,7 @@ class NamespaceRoutesApi extends runtime.BaseAPI {
                 method: 'POST',
                 headers: headerParameters,
                 query: queryParameters,
-                body: models_1.NamespaceIdsToJSON(requestParameters.namespaceIds),
+                body: (0, models_1.NamespaceIdsToJSON)(requestParameters.namespaceIds),
             });
             return new runtime.JSONApiResponse(response, (jsonValue) => jsonValue.map(models_1.NamespaceNameDTOFromJSON));
         });
@@ -238,7 +238,7 @@ class NamespaceRoutesApi extends runtime.BaseAPI {
                 headers: headerParameters,
                 query: queryParameters,
             });
-            return new runtime.JSONApiResponse(response, (jsonValue) => models_1.NamespacePageFromJSON(jsonValue));
+            return new runtime.JSONApiResponse(response, (jsonValue) => (0, models_1.NamespacePageFromJSON)(jsonValue));
         });
     }
     /**

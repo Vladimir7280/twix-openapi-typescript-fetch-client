@@ -61,7 +61,7 @@ class FinalizationRoutesApi extends runtime.BaseAPI {
                 headers: headerParameters,
                 query: queryParameters,
             });
-            return new runtime.JSONApiResponse(response, (jsonValue) => models_1.FinalizationProofDTOFromJSON(jsonValue));
+            return new runtime.JSONApiResponse(response, (jsonValue) => (0, models_1.FinalizationProofDTOFromJSON)(jsonValue));
         });
     }
     /**
@@ -91,7 +91,7 @@ class FinalizationRoutesApi extends runtime.BaseAPI {
                 headers: headerParameters,
                 query: queryParameters,
             });
-            return new runtime.JSONApiResponse(response, (jsonValue) => models_1.FinalizationProofDTOFromJSON(jsonValue));
+            return new runtime.JSONApiResponse(response, (jsonValue) => (0, models_1.FinalizationProofDTOFromJSON)(jsonValue));
         });
     }
     /**

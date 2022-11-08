@@ -61,7 +61,7 @@ class MosaicRoutesApi extends runtime.BaseAPI {
                 headers: headerParameters,
                 query: queryParameters,
             });
-            return new runtime.JSONApiResponse(response, (jsonValue) => models_1.MosaicInfoDTOFromJSON(jsonValue));
+            return new runtime.JSONApiResponse(response, (jsonValue) => (0, models_1.MosaicInfoDTOFromJSON)(jsonValue));
         });
     }
     /**
@@ -91,7 +91,7 @@ class MosaicRoutesApi extends runtime.BaseAPI {
                 headers: headerParameters,
                 query: queryParameters,
             });
-            return new runtime.JSONApiResponse(response, (jsonValue) => models_1.MerkleStateInfoDTOFromJSON(jsonValue));
+            return new runtime.JSONApiResponse(response, (jsonValue) => (0, models_1.MerkleStateInfoDTOFromJSON)(jsonValue));
         });
     }
     /**
@@ -121,7 +121,7 @@ class MosaicRoutesApi extends runtime.BaseAPI {
                 method: 'POST',
                 headers: headerParameters,
                 query: queryParameters,
-                body: models_1.MosaicIdsToJSON(requestParameters.mosaicIds),
+                body: (0, models_1.MosaicIdsToJSON)(requestParameters.mosaicIds),
             });
             return new runtime.JSONApiResponse(response, (jsonValue) => jsonValue.map(models_1.MosaicInfoDTOFromJSON));
         });
@@ -165,7 +165,7 @@ class MosaicRoutesApi extends runtime.BaseAPI {
                 headers: headerParameters,
                 query: queryParameters,
             });
-            return new runtime.JSONApiResponse(response, (jsonValue) => models_1.MosaicPageFromJSON(jsonValue));
+            return new runtime.JSONApiResponse(response, (jsonValue) => (0, models_1.MosaicPageFromJSON)(jsonValue));
         });
     }
     /**

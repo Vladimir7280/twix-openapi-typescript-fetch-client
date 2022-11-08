@@ -39,7 +39,7 @@ function AccountRestrictionNetworkPropertiesDTOFromJSONTyped(json, ignoreDiscrim
         return json;
     }
     return {
-        'maxAccountRestrictionValues': !runtime_1.exists(json, 'maxAccountRestrictionValues') ? undefined : json['maxAccountRestrictionValues'],
+        'maxAccountRestrictionValues': !(0, runtime_1.exists)(json, 'maxAccountRestrictionValues') ? undefined : json['maxAccountRestrictionValues'],
     };
 }
 exports.AccountRestrictionNetworkPropertiesDTOFromJSONTyped = AccountRestrictionNetworkPropertiesDTOFromJSONTyped;

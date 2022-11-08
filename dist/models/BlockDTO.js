@@ -60,6 +60,7 @@ function BlockDTOFromJSONTyped(json, ignoreDiscriminator) {
         'feeToPay': json['feeToPay'],
         'totalSupply': json['totalSupply'],
         'inflation': json['inflation'],
+        'inflationMultiplier': json['inflationMultiplier'],
     };
 }
 exports.BlockDTOFromJSONTyped = BlockDTOFromJSONTyped;
@@ -93,6 +94,7 @@ function BlockDTOToJSON(value) {
         'feeToPay': value.feeToPay,
         'totalSupply': value.totalSupply,
         'inflation': value.inflation,
+        'inflationMultiplier': value.inflationMultiplier,
     };
 }
 exports.BlockDTOToJSON = BlockDTOToJSON;

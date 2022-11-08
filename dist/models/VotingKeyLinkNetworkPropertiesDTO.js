@@ -39,7 +39,7 @@ function VotingKeyLinkNetworkPropertiesDTOFromJSONTyped(json, ignoreDiscriminato
         return json;
     }
     return {
-        'dummy': !runtime_1.exists(json, 'dummy') ? undefined : json['dummy'],
+        'dummy': !(0, runtime_1.exists)(json, 'dummy') ? undefined : json['dummy'],
     };
 }
 exports.VotingKeyLinkNetworkPropertiesDTOFromJSONTyped = VotingKeyLinkNetworkPropertiesDTOFromJSONTyped;

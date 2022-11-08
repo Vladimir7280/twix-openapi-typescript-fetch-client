@@ -40,10 +40,10 @@ function TransactionStatusDTOFromJSONTyped(json, ignoreDiscriminator) {
     }
     return {
         'group': json['group'],
-        'code': !runtime_1.exists(json, 'code') ? undefined : json['code'],
+        'code': !(0, runtime_1.exists)(json, 'code') ? undefined : json['code'],
         'hash': json['hash'],
         'deadline': json['deadline'],
-        'height': !runtime_1.exists(json, 'height') ? undefined : json['height'],
+        'height': !(0, runtime_1.exists)(json, 'height') ? undefined : json['height'],
     };
 }
 exports.TransactionStatusDTOFromJSONTyped = TransactionStatusDTOFromJSONTyped;

@@ -39,8 +39,8 @@ function HashLockNetworkPropertiesDTOFromJSONTyped(json, ignoreDiscriminator) {
         return json;
     }
     return {
-        'lockedFundsPerAggregate': !runtime_1.exists(json, 'lockedFundsPerAggregate') ? undefined : json['lockedFundsPerAggregate'],
-        'maxHashLockDuration': !runtime_1.exists(json, 'maxHashLockDuration') ? undefined : json['maxHashLockDuration'],
+        'lockedFundsPerAggregate': !(0, runtime_1.exists)(json, 'lockedFundsPerAggregate') ? undefined : json['lockedFundsPerAggregate'],
+        'maxHashLockDuration': !(0, runtime_1.exists)(json, 'maxHashLockDuration') ? undefined : json['maxHashLockDuration'],
     };
 }
 exports.HashLockNetworkPropertiesDTOFromJSONTyped = HashLockNetworkPropertiesDTOFromJSONTyped;

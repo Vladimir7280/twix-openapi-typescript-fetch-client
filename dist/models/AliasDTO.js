@@ -40,8 +40,8 @@ function AliasDTOFromJSONTyped(json, ignoreDiscriminator) {
     }
     return {
         'type': json['type'],
-        'mosaicId': !runtime_1.exists(json, 'mosaicId') ? undefined : json['mosaicId'],
-        'address': !runtime_1.exists(json, 'address') ? undefined : json['address'],
+        'mosaicId': !(0, runtime_1.exists)(json, 'mosaicId') ? undefined : json['mosaicId'],
+        'address': !(0, runtime_1.exists)(json, 'address') ? undefined : json['address'],
     };
 }
 exports.AliasDTOFromJSONTyped = AliasDTOFromJSONTyped;
