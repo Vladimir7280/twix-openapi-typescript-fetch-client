@@ -284,7 +284,7 @@ export function ImportanceBlockDTOToJSON(value?: ImportanceBlockDTO | null): any
         'feeToPay': value.feeToPay,
         'totalSupply': value.totalSupply,
         'inflation': value.inflation,
-        'inflationMultiplier': value.inflation,
+        'inflationMultiplier': value.inflationMultiplier,
         'votingEligibleAccountsCount': value.votingEligibleAccountsCount,
         'harvestingEligibleAccountsCount': value.harvestingEligibleAccountsCount,
         'totalVotingBalance': value.totalVotingBalance,
